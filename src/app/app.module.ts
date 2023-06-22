@@ -8,7 +8,6 @@ import { SetsComponent } from './sets/sets.component';
 import { CardPoolComponent } from './card-pool/card-pool.component';
 import { HomeComponent } from './home/home.component';
 import { CreditsComponent } from './credits/credits.component';
-import { DiscordComponent } from './discord/discord.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CardPoolComponent,
     HomeComponent,
     CreditsComponent,
-    DiscordComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -29,7 +27,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       {path: 'sets', component: SetsComponent},
       {path: 'card-pool', component: CardPoolComponent},
       {path: 'credits', component: CreditsComponent},
-      {path: 'discord', component: DiscordComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ])
