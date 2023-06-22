@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { SetsComponent } from './sets/sets.component';
 import { CardPoolComponent } from './card-pool/card-pool.component';
 import { HomeComponent } from './home/home.component';
-import { CreditsComponent } from './credits/credits.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SetsComponent,
     CardPoolComponent,
     HomeComponent,
-    CreditsComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -26,7 +24,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       {path: 'home', component: HomeComponent},
       {path: 'sets', component: SetsComponent},
       {path: 'card-pool', component: CardPoolComponent},
-      {path: 'credits', component: CreditsComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ])
