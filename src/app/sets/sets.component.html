@@ -1,1 +1,18 @@
-<p>sets works!</p>
+<div class="d-flex justify-content-center mt-2">
+  <h1>Core Sets</h1>
+</div>
+
+
+<div *ngFor="let set of setList">
+  <div class="container d-flex justify-content-center mt-4 mb-4">
+    <div>
+      <img src="{{set.photoLink}}" class="rounded img-fluid">
+    </div>
+    <div>
+      <p>{{set.name}}</p>
+      <p>{{"Released " + set.releaseDate}}</p>
+      <p>{{"In Rotation: " + set.inRotation}}</p>
+      <a href={{set.cubeLink}}>Cube Link</a>
+    </div>
+  </div>
+</div>
