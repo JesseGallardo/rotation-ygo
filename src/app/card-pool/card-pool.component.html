@@ -1,1 +1,31 @@
-<p>card-pool works!</p>
+<div class="d-flex justify-content-center mt-2">
+  <h1>Card Pool</h1>
+</div>
+
+<div class="d-flex justify-content-center mt-2">
+  <h4>This page contains all cards that are currently legal</h4>
+</div>
+
+<div class="d-flex justify-content-center mt-2">
+  <p>Last Updated 06/27/2023</p>
+</div>
+
+<div class="container-fluid">
+  <div class="d-flex justify-content-center mt-4 mb-4 table-responsive-lg">
+    <table>
+      <thead>
+        <th style="width: 55%;">Card Name</th>
+        <th style="width: 30%;">Card Type</th>
+        <th style="width: 15%;">Set</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let card of rotationList">
+          <td>{{card.name}}</td>
+          <td>{{card.cardType}}</td>
+          <td>{{card.set}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
