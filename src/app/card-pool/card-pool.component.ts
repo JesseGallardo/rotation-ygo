@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ROTATION_LIST } from '../card-pool';
 
 @Component({
   selector: 'app-card-pool',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-pool.component.css']
 })
 export class CardPoolComponent implements OnInit {
+  rotationList = ROTATION_LIST;
 
   constructor() { }
 
