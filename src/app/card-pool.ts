@@ -5,6 +5,7 @@ export interface Card {
   set: string
 }
 
+// This const contains all the cards currently in rotation
 export const ROTATION_LIST = [
   {
       "id": 75380687,
