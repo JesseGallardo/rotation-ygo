@@ -8,6 +8,8 @@ import { SetsComponent } from './sets/sets.component';
 import { CardPoolComponent } from './card-pool/card-pool.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PoolSearchPipe } from './pool-search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SetsComponent,
     CardPoolComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PoolSearchPipe
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       {path: 'card-pool', component: CardPoolComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
-    ])
+    ]),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
