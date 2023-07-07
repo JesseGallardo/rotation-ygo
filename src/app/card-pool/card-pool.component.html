@@ -36,7 +36,11 @@
         [class.xyz]="card.cardType == 'XYZ Monster'"
         [class.link]="card.cardType == 'Link Monster'"
         >
-          <td>{{card.name}}</td>
+          <td>
+            <a href="https://ygoprodeck.com/card/?search={{card.id}}"
+            [id]="card.cardType == 'XYZ Monster' ? 'xyz-font-color' : ''"
+            >{{card.name}}</a>
+          </td>
           <td>{{card.cardType}}</td>
           <td>{{card.set}}</td>
         </tr>
