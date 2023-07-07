@@ -1,4 +1,74 @@
 th, td {
-  border: 1px solid;
+  border: 1px solid gray;
   text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.normal {
+  background-color: #FDE68A;
+}
+
+.normal-pend {
+  background-image: linear-gradient(to right,#FDE68A, #469c80);
+}
+
+.effect {
+  background-color: #f89563;
+}
+
+.effect-pend {
+  background-image: linear-gradient(to right,#f89563, #469c80);
+}
+
+.ritual {
+  background-color: #538dd5;
+}
+
+.ritual-pend {
+  background-image: linear-gradient(to right,#538dd5, #469c80);
+}
+
+.fusion {
+  background-color: #c39ee4;
+}
+
+.fusion-pend {
+  background-image: linear-gradient(to right,#c39ee4, #469c80);
+}
+
+.synchro {
+  background-color: white;
+}
+
+.synchro-pend {
+  background-image: linear-gradient(to right,white, #469c80);
+}
+
+.xyz {
+  background-color: #000000;
+  color: lavender;
+}
+
+.xyz-pend {
+  background-image: linear-gradient(to right,000000, #469c80);
+  color: lavender;
+}
+
+.link {
+  background-color: #3ba2f1;
+}
+
+.spell {
+  background-color: #53bd99;
+}
+
+.trap {
+  background-color: #be7f9b;
 }

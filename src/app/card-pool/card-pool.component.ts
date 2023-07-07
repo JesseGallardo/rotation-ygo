@@ -14,4 +14,5 @@ export class CardPoolComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchText = ''
 }
