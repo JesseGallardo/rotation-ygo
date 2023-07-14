@@ -14,7 +14,7 @@ export const SET_LIST = [
     name: "Core Set",
     releaseDate: "06/13/2023",
     cubeLink: "https://ygoprodeck.com/cube/view-cube/4117",
-    photoLink: "/assets/sets/core-set.png",
+    photoLink: "assets/sets/core-set.png",
     inRotation: "Yes"
   }
 ]
