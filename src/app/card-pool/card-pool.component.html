@@ -24,22 +24,28 @@
       </thead>
       <tbody>
         <tr *ngFor="let card of rotationList | poolSearch: searchText"
-        [class.spell]="card.cardType == 'Spell Card'"
-        [class.trap]="card.cardType == 'Trap Card'"
-        [class.normal]="card.cardType == 'Normal Monster'"
-        [class.normal-pend]="card.cardType == 'Pendulum Normal Monster'"
-        [class.effect]="card.cardType == 'Effect Monster' || card.cardType == 'Tuner Monster' || card.cardType == 'Flip Effect Monster' || card.cardType == 'Spirit Monster'"
-        [class.effect-pend]="card.cardType == 'Pendulum Effect Monster'"
-        [class.fusion]="card.cardType == 'Fusion Monster'"
-        [class.ritual]="card.cardType == 'Ritual Effect Monster' || card.cardType == 'Ritual Monster'"
-        [class.synchro]="card.cardType == 'Synchro Monster' || card.cardType == 'Synchro Tuner Monster'"
-        [class.xyz]="card.cardType == 'XYZ Monster'"
-        [class.link]="card.cardType == 'Link Monster'"
-        >
+        [ngClass]="{
+          'spell' : card.cardType == 'Spell Card',
+          'trap' : card.cardType == 'Trap Card',
+          'normal' : card.cardType == 'Normal Monster',
+          'normal-pend' : card.cardType == 'Pendulum Normal Monster',
+          'effect' : card.cardType == 'Effect Monster'
+                      || card.cardType == 'Tuner Monster'
+                      || card.cardType == 'Flip Effect Monster'
+                      || card.cardType == 'Spirit Monster',
+          'effect-pend' : card.cardType == 'Pendulum Effect Monster',
+          'fusion' : card.cardType == 'Fusion Monster',
+          'ritual' : card.cardType == 'Ritual Effect Monster' || card.cardType == 'Ritual Monster',
+          'synchro' : card.cardType == 'Synchro Monster' || card.cardType == 'Synchro Tuner Monster',
+          'xyz' : card.cardType == 'XYZ Monster',
+          'link' : card.cardType == 'Link Monster'
+          }">
           <td>
             <a href="https://ygoprodeck.com/card/?search={{card.id}}"
-            [id]="card.cardType == 'XYZ Monster' ? 'xyz-font-color' : ''"
-            >{{card.name}}</a>
+            [ngClass]="{'xyz' : card.cardType == 'XYZ Monster'}"
+            >
+              {{card.name}}
+            </a>
           </td>
           <td>{{card.cardType}}</td>
           <td>{{card.set}}</td>
