@@ -38,12 +38,10 @@
           'ritual' : card.cardType == 'Ritual Effect Monster' || card.cardType == 'Ritual Monster',
           'synchro' : card.cardType == 'Synchro Monster' || card.cardType == 'Synchro Tuner Monster',
           'xyz' : card.cardType == 'XYZ Monster',
-          'link' : card.cardType == 'Link Monster'
-          }">
+          'link' : card.cardType == 'Link Monster'}">
           <td>
             <a href="https://ygoprodeck.com/card/?search={{card.id}}"
-            [ngClass]="{'xyz' : card.cardType == 'XYZ Monster'}"
-            >
+            [ngClass]="{'xyz' : card.cardType == 'XYZ Monster'}">
               {{card.name}}
             </a>
           </td>
