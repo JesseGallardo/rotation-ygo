@@ -9,10 +9,11 @@
       <img src="{{set.photoLink}}" class="rounded img-fluid">
     </div>
     <div>
-      <p>{{set.name}}</p>
-      <p>{{"Released " + set.releaseDate}}</p>
-      <p>{{"In Rotation: " + set.inRotation}}</p>
+      <h3 id="cardName">{{set.name}}:</h3>
+      <h5 *ngIf="set.inRotation == 'Yes'" class="inRotation">In Rotation</h5>
+      <p *ngIf="set.inRotation == 'No'" class="notInRotation">Not in Rotation</p>
       <a href={{set.cubeLink}}>Cube Link</a>
+      <p>{{"Released " + set.releaseDate}}</p>
     </div>
   </div>
 </div>
